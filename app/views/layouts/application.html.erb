@@ -1,14 +1,373 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>meetup_getup</title>
-    <%= stylesheet_link_tag 'screen', :media => 'all', :cache => true %>
-  </head>
-  <body class="<%= body_class %>">
-    <%= render :partial => 'shared/flashes' -%>
-    <%= yield %>
-    <%= render :partial => 'shared/javascript' %>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			Molly Ringwald's Go-To Dish - Videos - CHOW
+		</title>
+		<link rel="canonical" href="/videos" />
+		<link rel="shortcut icon" href="/favicon.ico?201008301741" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/images/apple-touch-icon.png?201008301741" />
+		<link rel="search" href="/opensearch.xml" title="CHOW Search" type="application/opensearchdescription+xml" />
+		<link href="/stylesheets/global.css?201008301741" rel="Stylesheet" type="text/css" />
+		<script type="text/javascript">
+//<![CDATA[
+		// refresh page if ajax deep linking pattern is found
+		if(document.location.toString().indexOf('#!') != -1){
+			var url = document.location.toString();
+			url = '/videos' + url.split('#!')[1];
+			document.location = url;
+		}
+		//]]>
+		</script>
+		<meta content=" Molly Ringwald's Go-To Dish - CHOW" name="title" />
+		<link rel="image_src" href="/blog-media/2010/09/molly_620.jpg" />
+		<meta content="." name="description" />
+		<meta name="medium" content="video" />
+		<meta name="video_height" content="242" />
+		<meta name="video_width" content="300" />
+		<meta name="video_type" content="application/x-shockwave-flash" />
+		<link rel="video_src" href="http://www.cbs.com/e/79xuL8o0lI58wM_lBCfLHXaRrHMJQOAQ/chow/1/" />
+		<link href="/stylesheets/video.css?201008301741" rel="stylesheet" type="text/css" /><!--[if IE 6]><link href="/stylesheets/chow_ie6.css?201008301741"  rel="Stylesheet" type="text/css" /><![endif]-->
+		<!--[if IE 7]><link href="/stylesheets/chow_ie7.css?201008301741"  rel="Stylesheet" type="text/css" /><![endif]-->
+		<!--[if IE 8]><link href="/stylesheets/chow_ie8.css?201008301741"  rel="Stylesheet" type="text/css" /><![endif]-->
+
+		<script type="text/javascript" src="http://yui.yahooapis.com/combo?2.8.1/build/yahoo-dom-event/yahoo-dom-event.js&amp;2.8.1/build/connection/connection-min.js&amp;2.8.1/build/datasource/datasource-min.js&amp;2.8.1/build/autocomplete/autocomplete-min.js">
+</script>
+		<script type="text/javascript" src="/javascripts/functions.js">
+</script>
+	</head>
+	<body class="yui-skin-sam" id="video-hub">
+		<div id="chow_header" class="clearfix">
+			<div id="chow_header_wrapper">
+				<div id="chow_header_inner" class="clearfix">
+					<div class="fr">
+						<div id="header_login">
+							<script type="text/javascript">
+//<![CDATA[
+							var loadLogin = false;
+							//]]>
+							</script> <a rel="nofollow" id="login_link" class="show_login_box" href="/account/login?return_to=http%3A%2F%2Fwww.chow.com%2Fvideos" name="login_link">Login</a> / <a rel="nofollow" id="signup_link" class="show_signup_box last" href="/account/signup?return_to=http%3A%2F%2Fwww.chow.com%2Fvideos" name="signup_link">Sign Up</a>
+						</div>
+						<div id="header_search" class="">
+							<ul id="header_search_options" class="clearfix">
+								<li>
+									<a href="#recipes" class="top_nav_search_tab">recipes</a>
+								</li>
+								<li>
+									<a href="#allchow" class="top_nav_search_tab selected">all chow</a>
+								</li>
+							</ul>
+							<form id="header_search_form" class="clear" action="/search" method="get">
+								<input type="text" name="query" class="text_input" id="input_query" value="Search..." /> <input type="text" class="text_input" disabled="disabled" id="input_in" value="IN" /> <input type="text" name="location" class="text_input" id="input_location" value="Location..." disabled="disabled" /> <input type="text" name="board_name" class="text_input" id="input_board_location" value="Board Name or Location" disabled="disabled" /> <input type="hidden" name="from_date" id="from_date" value="1 year ago" disabled="disabled" /> <input type="submit" id="top_nav_submit" class="fl" value="" /> <input type="hidden" name="search_board_id" id="search_board_id" value="" disabled="disabled" /> <input type="hidden" name="type" id="input_type" value="" disabled="disabled" />
+								<div id="autoCompleteContainer"></div>
+							</form>
+						</div>
+					</div>
+					<div id="header_logo">
+						<a href="http://www.chow.com" class="chow" title="CHOW home page">CHOW</a>
+					</div>
+				</div>
+			</div>
+			<div id="chow_top_nav">
+				<ul id="chow_top_nav_inner" class="clearfix">
+					<li id="link_to_other_site" class="top_nav_item first last">
+						<a href="http://chowhound.chow.com/boards"><span>take me to chowhound</span></a>
+					</li>
+					<li class="top_nav_item first">
+						<a href="/recipes">recipes</a>
+					</li>
+					<li class="top_nav_item">
+						<a href="/food-news/">top stories</a>
+					</li>
+					<li class="top_nav_item last">
+						<a href="/videos" class="selected">video</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="mantle_skin">
+			<div id="custom-doc">
+				<%= yield %>
+				<div id="ft" class="subpage">
+					<div id="ft_body" class="clearfix">
+						<div id="ft_box4">
+							<div id="ft_box3">
+								<div id="ft_box2">
+									<div id="ft_box1">
+										<div id="ft_col1">
+											<ul class="footer_column first">
+												<li class="col_heading rc-tl">
+													<a href="/recipes">» Recipes</a>
+												</li>
+												<li>
+													<a href="/recipes/28842-tofu-and-broccolini-pad-see-ew">» Tofu and Broccolini Pad See Ew</a>
+												</li>
+												<li>
+													<a href="/recipes/28841-summer-of-love">» Summer of Love</a>
+												</li>
+												<li>
+													<a href="/recipes/28840-vegan-mexican-chocolate-ice-cream">» Vegan Mexican Chocolate Ice Cream</a>
+												</li>
+												<li>
+													<a href="/recipes/28839-grilled-baby-back-ribs-with-hoisin">» Grilled Baby Back Ribs with Hoisin</a>
+												</li>
+												<li>
+													<a href="/recipes/28838-tailgating-menu-alert-grilled-wings">» Tailgating Menu Alert: Grilled Wings</a>
+												</li>
+												<li>
+													<a href="/recipes/28837-green-chili-turkey-burgers">» Green Chili Turkey Burgers</a>
+												</li>
+											</ul>
+										</div>
+										<div id="ft_col2">
+											<ul class="footer_column">
+												<li class="col_heading">
+													<a href="http://chowhound.chow.com/boards">» Discussion</a>
+												</li>
+												<li>
+													<a href="http://chowhound.chow.com/topics/729419">» Hard Hat Report Vol 6</a>
+												</li>
+												<li>
+													<a href="http://chowhound.chow.com/topics/725098">» Lark Street Albany</a>
+												</li>
+												<li>
+													<a href="http://chowhound.chow.com/topics/732098">» Inlet, Somers point, NJ</a>
+												</li>
+												<li>
+													<a href="http://chowhound.chow.com/topics/515533">» Did someone mention a Raleigh area restaurant blog?</a>
+												</li>
+												<li>
+													<a href="http://chowhound.chow.com/topics/732279">» 8th arrondisement in October - brasseries?</a>
+												</li>
+												<li>
+													<a href="http://chowhound.chow.com/topics/731533">» Chefs versus cooks</a>
+												</li>
+											</ul>
+										</div>
+										<div id="ft_col3">
+											<ul class="footer_column">
+												<li class="col_heading">
+													<a href="/food-news/">» Stories</a>
+												</li>
+												<li>
+													<a href="/food-news/58630/granola-fruit-breakfast-pizza-is-a-doughy-travesty/">» Granola-Fruit Pizza Is a Doughy Travesty</a>
+												</li>
+												<li>
+													<a href="/digest/58904/late-summer-salad-days/">» Late-Summer Salad Days</a>
+												</li>
+												<li>
+													<a href="/food-news/58854/a-bean-recipe-seasoned-with-communism/">» A Bean Recipe Seasoned with Communism</a>
+												</li>
+												<li>
+													<a href="/digest/58883/sardinian-explorations-in-brooklyn-heights/">» Sardinian Explorations in Brooklyn Heights</a>
+												</li>
+												<li>
+													<a href="/digest/58943/bar-agricole-now-or-later/">» Bar Agricole, Now or Later</a>
+												</li>
+												<li>
+													<a href="/digest/58869/the-world-according-to-mr.-tasty/">» The World According to Mr. Tasty</a>
+												</li>
+											</ul>
+										</div>
+										<div id="ft_col4">
+											<ul class="footer_column last">
+												<li class="col_heading rc-tr">
+													<a href="/videos">» Videos</a>
+												</li>
+												<li>
+													<a href="/videos/show/my-go-to/58512/molly-ringwalds-go-to-dish">» Molly Ringwald's Go-To Dish</a>
+												</li>
+												<li>
+													<a href="/videos/show/supertaster/57656/fake-street-food-from-taco-bell">» Fake Street Food from Taco Bell</a>
+												</li>
+												<li>
+													<a href="/videos/show/my-go-to/57917/charles-phans-go-to-dish">» Charles Phan's Go-To Dish</a>
+												</li>
+												<li>
+													<a href="/videos/show/chow-tips/56652/how-to-make-simple-syrup-really-simple">» How to Make Simple Syrup Really Simple</a>
+												</li>
+												<li>
+													<a href="/videos/show/chow-tips/56647/dont-muddle-your-mint">» Don't Muddle Your Mint</a>
+												</li>
+												<li>
+													<a href="/videos/show/chow-tips/54530/how-to-make-a-quick-vinaigrette">» How to Make a Quick Vinaigrette</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- ft_box4 -->
+					</div><!--ft_body -->
+				</div><!-- ft-->
+				<div id="chow_footer">
+					<div id="chow_footer_inner">
+						<div id="ft_nav">
+							<p id="about_menu">
+								<a href="/about">About/Contact CHOW</a> | <a href="/sitemap.html">Site Map</a> | <a href="/newsletters" class="show_login_box" rel="nofollow">Newsletters</a> | <a href="/tags">Tags</a> | <a href="http://chowhound.chow.com/boards/59">Feedback</a> | <a href="http://chowhound.chow.com/boards/30">Site Talk</a> | <a href="http://chowhound.chow.com/topics/367605">Chowhound</a> : <a href="http://chowhound.chow.com/topics/367605">Guidelines</a> : <a href="http://chowhound.chow.com/manifesto">Manifesto</a> : <a href="http://chowhound.chow.com/faq">FAQ</a>
+							</p>
+							<div id="cbsi_f">
+								<form>
+									<script language="javascript" type="text/javascript">
+//<![CDATA[
+									document.write("<div><label for=\"cbsi_footer_menu\">Visit other CBS Interactive Sites<\/label><select name=\"cbsi_footer_menu\" id=\"cbsi_footer_menu\"><option value=\"\">Select Site<\/option><option value=\"http://www.bnet.com\">BNET<\/option><option value=\"http://www.cbscares.com\">CBS Cares<\/option><option value=\"http://www.cbsfilms.com\">CBS Films<\/option><option value=\"http://www.cbsradio.com/streaming/index.html\">CBS Radio<\/option><option value=\"http://www.cbs.com\">CBS.com<\/option><option value=\"http://www.cbsinteractive.com\">CBSInteractive<\/option><option value=\"http://www.cbsnews.com\">CBSNews.com<\/option><option value=\"http://www.cbssports.com\">CBSSports.com<\/option><option value=\"http://www.chow.com\">CHOW<\/option><option value=\"http://www.cnet.com\">CNET<\/option><option value=\"http://collegenetwork.cbssports.com\">College Network<\/option><option value=\"http://findarticles.com\">Find Articles<\/option><option value=\"http://www.gamespot.com\">GameSpot<\/option><option value=\"http://www.help.com\">Help.com<\/option><option value=\"http://www.last.fm\">Last.fm<\/option><option value=\"http://www.maxpreps.com\">MaxPreps<\/option><option value=\"http://www.metacritic.com\">Metacritic.com<\/option><option value=\"http://moneywatch.bnet.com\">Moneywatch<\/option><option value=\"http://www.movietome.com\">MovieTome<\/option><option value=\"http://www.mp3.com\">MP3.com<\/option><option value=\"http://www.mysimon.com\">mySimon<\/option><option value=\"http://www.ncaa.com\">NCAA<\/option><option value=\"http://www.radio.com\">Radio.com<\/option><option value=\"http://www.search.com\">Search.com<\/option><option value=\"http://www.shopper.com\">Shopper.com<\/option><option value=\"http://www.sho.com\">Showtime<\/option><option value=\"http://www.smartplanet.com\">SmartPlanet<\/option><option value=\"http://www.techrepublic.com\">TechRepublic<\/option><option value=\"http://www.theinsider.com\">The Insider<\/option><option value=\"http://www.tv.com\">TV.com<\/option><option value=\"http://www.urbanbaby.com\">UrbanBaby.com<\/option><option value=\"http://www.zdnet.com\">ZDNet<\/option><\/select><input type=\"button\" value=\"Go\" onClick=\"window.location=document.getElementById('cbsi_footer_menu').options[document.getElementById('cbsi_footer_menu').selectedIndex].value;\" /><\/div>");
+									//]]>
+									</script>
+								</form><noscript>
+								<div>
+									<a href="http://www.bnet.com">BNET</a> | <a href="http://www.cbscares.com">CBS Cares</a> | <a href="http://www.cbsfilms.com">CBS Films</a> | <a href="http://www.cbsradio.com/streaming/index.html">CBS Radio</a> | <a href="http://www.cbs.com">CBS.com</a> | <a href="http://www.cbsinteractive.com">CBSInteractive</a> | <a href="http://www.cbsnews.com">CBSNews.com</a> | <a href="http://www.cbssports.com">CBSSports.com</a> | <a href="http://www.chow.com">CHOW</a> | <a href="http://www.cnet.com">CNET</a> | <a href="http://collegenetwork.cbssports.com">College Network</a> | <a href="http://findarticles.com">Find Articles</a> | <a href="http://www.gamespot.com">GameSpot</a> | <a href="http://www.help.com">Help.com</a> | <a href="http://www.last.fm">Last.fm</a> | <a href="http://www.maxpreps.com">MaxPreps</a> | <a href="http://www.metacritic.com">Metacritic.com</a> | <a href="http://moneywatch.bnet.com">Moneywatch</a> | <a href="http://www.movietome.com">MovieTome</a> | <a href="http://www.mp3.com">MP3.com</a> | <a href="http://www.mysimon.com">mySimon</a> | <a href="http://www.ncaa.com">NCAA</a> | <a href="http://www.radio.com">Radio.com</a> | <a href="http://www.search.com">Search.com</a> | <a href="http://www.shopper.com">Shopper.com</a> | <a href="http://www.sho.com">Showtime</a> | <a href="http://www.smartplanet.com">SmartPlanet</a> | <a href="http://www.techrepublic.com">TechRepublic</a> | <a href="http://www.theinsider.com">The Insider</a> | <a href="http://www.tv.com">TV.com</a> | <a href="http://www.urbanbaby.com">UrbanBaby.com</a> | <a href="http://www.zdnet.com">ZDNet</a>
+								</div></noscript>
+								<p id="cbsi_f_pop">
+									Popular on CBS sites: <a href='http://www.cbssports.com/tennis'>US Open</a> | <a href='http://www.cbssports.com/golf'>PGA Championship</a> | <a href='http://www.cnet.com/apple-ipad'>iPad</a> | <a href='http://www.metacritic.com/games/'>Video Game Reviews</a> | <a href='http://reviews.cnet.com/cell-phones'>Cell Phones</a><!-- cbth:100 -->
+								</p>
+								<p>
+									CBS Entertainment | <a href='http://www.cnetnetworks.com/?tag=footer;link'>About CBS Interactive</a> | <a href='http://www.cnetnetworks.com/careers/?tag=footer;link'>Jobs</a> | <a href='http://www.cnetnetworks.com/advertise/'>Advertise</a>
+								</p>
+								<p>
+									© 2010 CBS Interactive Inc. All rights reserved. | <a href='http://legalterms.cbsinteractive.com/privacy'>Privacy Policy</a> | <a href='http://legalterms.cbsinteractive.com/terms-of-use'>Terms of Use</a> (UPDATED)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div><!-- login box -->
+				<div class="chow_lightbox login_signup" id="chow_login">
+					<div class="chow_lightbox_bg"></div>
+					<div class="chow_lightbox_body">
+						<div class="chow_lightbox_inner">
+							<a href="#chow_login" class="close_lightbox">X</a>
+							<h3 id="login_header">
+								Let's get cooking!
+							</h3>
+							<form class="mt15" id="login_form" method="post">
+								<input type="hidden" id="login_timezone" name="timezone_offset" value="" /> <label for="name">USERNAME / EMAIL</label> <input id="login_name" class="text_input" name="login[name]" type="text" /> <label for="password">PASSWORD</label> <input id="login_password" class="text_input" name="login[password]" type="password" />
+								<div id="login_error" class="login_error"></div>
+								<fieldset class="tac">
+									<a href="#login" id="login_submit" class="login_submit_btns" name="login_submit"></a> <img id="login_submit_spinner" class="submit_spinner" src="/images/spinner-small-orange.gif" width="16" height="16" /> <a href="#signup" onclick="$('chow_login').style.display='none'; $('chow_signup').style.display='block'; return false" class="blue">Join CHOW</a> | <a href="/account/lost_password" onclick="chowLoginSignup.request_password('login_form'); return false" class="blue">Forgot your password?</a>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div><!-- sign up box -->
+				<div class="chow_lightbox login_signup" id="chow_signup">
+					<div class="chow_lightbox_bg"></div>
+					<div class="chow_lightbox_body">
+						<div class="chow_lightbox_inner">
+							<a href="#chow_signup" class="close_lightbox">X</a>
+							<h3 id="signup_header">
+								Let's get started!
+							</h3>
+							<form class="mt15" id="signup_form" method="post">
+								<input type="hidden" id="signup_timezone" name="timezone_offset" value="" /> <label for="name">USERNAME</label> <input id="user_name" name="user[name]" class="text_input fl" type="text" value="" />
+								<div class="signup_hints login_submit_btns signup_ok" id="username_ok">
+									Good to go!
+								</div>
+								<div class="signup_hints login_submit_btns signup_error" id="username_error">
+									Already taken
+								</div><label for="password" class="clear">PASSWORD</label> <input id="user_password" name="user[password]" class="text_input fl" type="password" />
+								<div class="signup_hints login_submit_btns signup_ok" id="password_ok">
+									Password ok
+								</div>
+								<div class="signup_hints login_submit_btns signup_error" id="password_error">
+									Password must be at least 3 characters
+								</div><label for="password_confirmation" class="clear">CONFIRM PASSWORD</label> <input id="user_password_confirmation" name="user[password_confirmation]" class="text_input fl" type="password" />
+								<div class="signup_hints login_submit_btns signup_error" id="confirm_password_error">
+									Both passwords must match
+								</div><label for="email" class="clear">EMAIL</label> <input id="user_email" name="user[email]" class="text_input fl" type="text" />
+								<div class="signup_hints login_submit_btns signup_ok" id="signup_email_ok"></div>
+								<div class="signup_hints login_submit_btns signup_error" id="signup_email_error"></div>
+								<div id="newsletter_options" class="clear">
+									<h3>
+										Choose Newsletters
+									</h3>
+									<div class="ml10">
+										<div class="f11 c666">
+											Click on a Newsletter title to see its most recent example
+										</div>
+										<ul class="mt10 ml25">
+											<li>
+												<input id="newsletters[e357]" name="newsletters[e357]" type="checkbox" value="1" /> <span class="f12 bold">CHOW Announcements</span>
+											</li>
+											<li>
+												<input id="newsletters[e348]" name="newsletters[e348]" type="checkbox" value="1" /> <span class="f12 bold">CHOW Partner Offers</span>
+											</li>
+											<li>
+												<input id="newsletters[e351]" name="newsletters[e351]" type="checkbox" value="1" /> <a href="http://nl.com.com/view_online_newsletter.jsp?list_id=e351" rel="nofollow" target="_blank">Recipe of the Day</a>
+											</li>
+											<li>
+												<input id="newsletters[e350]" name="newsletters[e350]" type="checkbox" value="1" /> <a href="http://nl.com.com/view_online_newsletter.jsp?list_id=e350" rel="nofollow" target="_blank">CHOW's Week in Food</a>
+											</li>
+											<li>
+												<input id="newsletters[e349]" name="newsletters[e349]" type="checkbox" value="1" /> <span class="f12 bold">CHOW Latest Stories</span>
+											</li>
+										</ul>
+										<div class="f12">
+											<strong>THE DIGEST</strong> - <span class="f11 c666">Weekly regional and topical roundups of the<br />
+											best of Chowhound</span>
+										</div>
+										<ul class="mt10 ml25">
+											<li>
+												<input id="newsletters[e352]" name="newsletters[e352]" type="checkbox" value="1" /> <a href="http://nl.com.com/view_online_newsletter.jsp?list_id=e352" rel="nofollow" target="_blank">San Francisco Bay Area</a>
+											</li>
+											<li>
+												<input id="newsletters[e353]" name="newsletters[e353]" type="checkbox" value="1" /> <a href="http://nl.com.com/view_online_newsletter.jsp?list_id=e353" rel="nofollow" target="_blank">New York Region</a>
+											</li>
+											<li>
+												<input id="newsletters[e354]" name="newsletters[e354]" type="checkbox" value="1" /> <a href="http://nl.com.com/view_online_newsletter.jsp?list_id=e354" rel="nofollow" target="_blank">Greater Los Angeles</a>
+											</li>
+											<li>
+												<input id="newsletters[e356]" name="newsletters[e356]" type="checkbox" value="1" /> <a href="http://nl.com.com/view_online_newsletter.jsp?list_id=e356" rel="nofollow" target="_blank">CHOW Home Cooking Digest</a>
+											</li>
+											<li>
+												<input id="newsletters[e355]" name="newsletters[e355]" type="checkbox" value="1" /> <a href="http://nl.com.com/view_online_newsletter.jsp?list_id=e355" rel="nofollow" target="_blank">Boston Area</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div id="signup_error" class="login_error"></div>
+								<div id="submit_rules">
+									Username is public and once confirmed, is unchangeable. By clicking the SIGN UP button, you agree to Chow's <a href="/terms" target="_blank" class="blue">terms of use</a> and have read and understand our <a href="/privacy.html" target="_blank" class="blue">privacy policy</a>.
+								</div><a href="#submit" id="signup_submit_lightbox" class="login_submit_btns" name="signup_submit_lightbox"></a> <img id="signup_submit_lightbox_spinner" class="submit_spinner" src="/images/spinner-small-orange.gif" width="16" height="16" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><script type="text/javascript">
+//<![CDATA[
+		chow_js.init();
+		//]]>
+		</script><script type="text/javascript" src="http://yui.yahooapis.com/2.8.1/build/yuiloader/yuiloader-min.js">
+</script><script type="text/javascript">
+//<![CDATA[
+		YAHOO.util.Get.script("http://dw.com.com/js/dw.js", {onSuccess: function() { DW.pageParams = {ptid:'2001', siteId:'103', tag:'chow_top_nav;chow_top_nav_inner', onid:'12714', cval:';;', ctype:'cw_videos', astid:'483'}; DW.clear((window.abtest)?abtest.DW_pageParams:null); DW.trackClicks(chowClickHandler); }});
+		//]]>
+		</script><noscript><img src="http://dw.com.com/clear/c.gif?ts=1283704967533&amp;ptid=2001&amp;siteId=103&amp;tag=chow_top_nav%3Bchow_top_nav_inner&amp;onid=12714&amp;cval=%3B%3B&amp;ctype=cw_videos&amp;astid=483" border="0" height="1" width="1" alt="" style="display:none;" /></noscript><script type="text/javascript">
+//<![CDATA[
+		var gaTracker = null;YAHOO.util.Get.script("http://www.google-analytics.com/ga.js", {onSuccess: function() { gaTracker = _gat._getTracker("UA-8105127-1"); gaTracker._setDomainName(".chow.com"); gaTracker._trackPageview(); }});
+		//]]>
+		</script><script type="text/javascript">
+//<![CDATA[
+		var loader = new YAHOO.util.YUILoader({require: ["video","json","element","cookie","animation"], combine: true, onSuccess: function() { 
+		chow_video.init();
+		jsReady = true;
+		if (window.onJsLoaded) { for (i in onJsLoaded) { onJsLoaded[i](); } } } }); loader.addModule({ type: "js", name: "video", fullpath: "/static/js/video.js?201008301741", varName: "chow_video_loaded"}); loader.insert();
+		//]]>
+		</script><script type="text/JavaScript">
+//<![CDATA[
+		{
+		var CN_AD = new Object();
+		CN_AD.AD_HOST = "mads.chow.com";
+		CN_AD.SITE = "103";
+		CN_AD.BRAND = "26";
+		CN_AD.SP = "80";
+		CN_AD.POS = "100";
+		CN_AD.BYPASSKEY = ";;";
+		CN_AD.PTYPE = "2001";
+		CN_AD.NCAT = "12714";
+		cbsiGetAd(CN_AD);
+		}
+		//]]>
+		</script>
+	</body>
 </html>

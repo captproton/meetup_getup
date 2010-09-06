@@ -1,0 +1,20 @@
+<h1>Listing spiels</h1>
+
+<table>
+  <tr>
+    <th>Version</th>
+  </tr>
+
+<% @spiels.each do |spiel| %>
+  <tr>
+    <td><%=h spiel.version %></td>
+    <td><%= link_to 'Show', spiel %></td>
+    <td><%= link_to 'Edit', edit_spiel_path(spiel) %></td>
+    <td><%= link_to 'Destroy', spiel, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New spiel', new_spiel_path %>

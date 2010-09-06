@@ -1,0 +1,189 @@
+#custom-doc *,
+#mantle_skin {zoom:1}
+
+#quick_reviews *,
+#restaurant_page #custom-doc * {zoom:0 !important}
+
+#restaurant_page #ft *,
+#restaurant_page #chow_footer * {zoom:1 !important}
+
+/* rok ad */
+#banner_rok_ad {
+  margin:1em 0 1em 0;
+}
+
+/* leaderboard */
+.madison_ad.sp15 {text-align:center;}
+
+/* places */
+ul.places {font-size:1em}
+
+/* places list */
+#add_place_popup #popup_col_a form .button {margin-bottom: -3px}
+
+/* blogs */
+#blog_categories_sidebar .blog_category_list a { width: 154px; }
+
+/* share tools */
+#recipes #time,
+#recipes #time.with_image {z-index: -1;}
+#menu_share ul li a {display: inline-block} /* fixes hasLayout */
+
+
+/* restaurants */
+#places_detail .arrows,
+#all_reviews .arrows, 
+#regions_index .arrows {margin-left:0 !important}
+#regions_index #sponsor_small {margin-top:0px}
+
+/* browse boards */
+.boards dd, .topics dd {margin-bottom:2px;margin-top:2px}
+.boards dd a, .topics dd a {padding-bottom:4px;}
+ul#ch_tab_options a {line-height:.75em}
+#toggle_advanced_search {top:7px}
+
+/* manage links */
+p#manage_links_instructions {margin-top:0;}
+.post_form .photo_upload p.instructions {padding-top:0}
+.dropdown_box {top:0;}	
+.topics_new .dropdown_box {width:500px !important;}
+.inline_form.places_search.dropdown_box {margin-top:-5px;}
+a.refresh-btn {margin-top:0;}
+
+.add-photo-photo .fileupload-fake-text {width:395px;margin-right:3px}		
+.response .add-photo-photo .fileupload-fake-text {width:380px;}			
+ol ol .response .add-photo-photo .fileupload-fake-text {width:360px;}		
+ol ol ol .response .add-photo-photo .fileupload-fake-text {width:340px;}		
+ol ol ol ol .response .add-photo-photo .fileupload-fake-text {width:320px;}		
+ol ol ol ol ol .response .add-photo-photo .fileupload-fake-text {width:300px;}		
+ol ol ol ol ol ol .response .add-photo-photo .fileupload-fake-text {width:280px;}		
+ol ol ol ol ol ol ol .response .add-photo-photo .fileupload-fake-text {width:260px;}	
+
+/* video hub */
+#video-hub .selected.video-side-nav-link a,
+#video-hub .selected.video-side-nav-link a:hover,
+#video-hub .video-side-nav-link a:hover {margin-right:0;}
+#video-hub .video-side-nav-link.collection a {margin:0}
+#video-hub .video-side-nav-link a.rss {padding-top:20px}
+#video-hub .show.video-side-nav-link a {margin-top:-10px}
+#video-hub #video-nav {margin-top: -1px}
+
+/* lightboxes */
+.chow_lightbox_body {
+left:400px;
+top:100px;
+}
+
+/* share tools and action items */
+
+.action_items_btn .button_graphic {background: url(/images/action_items_sprite.jpg) top left no-repeat; position:absolute; width:4px; height:4px; overflow:hidden}
+.action_items_btn .action_btn_tl {top:-2px; left:-1px; background-position: 0px 0px}
+.action_items_btn .action_btn_tr {top:-1px; right:-1px; background-position: -4px -50px}
+.action_items_btn .action_btn_bl {bottom:-3px; left:-2px; background-position: -1px -105px}
+.action_items_btn .action_btn_br {bottom:-1px; right:-3px; background-position: -5px -153px}
+
+.action_items_btn:hover {background-color:#9b9b9a; color:#fff !important}
+.action_items_btn:hover a {color:#fff !important}
+.action_items_btn a:hover {color:#fff;text-decoration:none}
+.action_items_btn:hover .action_btn_tl {top:-1px; left:-1px; background-position: 0px -201px}
+.action_items_btn:hover .action_btn_tr {top:-1px; right:-1px; background-position: 0px -250px}
+.action_items_btn:hover .action_btn_bl {bottom:-1px; left:-1px; background-position: 0px -300px}
+.action_items_btn:hover .action_btn_br {bottom:-1px; right:-1px; background-position: 0px -352px}
+
+.action_items_btn .save_image {padding:5px;cursor:pointer}
+
+/* search page */
+.search #boards_popup_inner label input {top:0; left:-13px}
+.search #toggle_advanced_search #tl_corner {display:none}
+.search .chow_popup a.close_popup.cancel_link {top:0}
+.popup_search_btn {display:block;clear:both;width:140px;border:1px solid #00ccff}
+/* footer */
+.footer_column li {padding-right:5px}
+#ft_body {
+	overflow:hidden;
+	position:relative
+}
+
+/* home page */
+
+/* gumballs */
+
+#home ul#gumballs li p {
+ line-height:16px
+}
+/* search */
+#chow_header.chowhound #header_search {width:420px !important}
+#chow_header #header_search {width:408px}
+#home #header_search_options {float:left}
+
+
+/* activity widget */
+#activity_widget {
+	background-color:#fff;
+	margin-bottom:4px
+}
+#activity_widget ul li span {
+	display:inline-block;
+	float:left;
+	line-height:auto
+}
+#activity_widget li img {float:left;padding-bottom:5px}
+#activity_widget li {position:relative;height:37px;margin-bottom:2px}
+.content_title {font-size:11px;position:absolute;top:10px;left:35px;width:240px}
+
+#push_down_lb {
+	min-width:1000px;
+}
+/*carousel*/
+#chow_carousel_inner {
+	position:relative
+}
+
+/* recipe hub */
+div.gumball105 img {
+	margin:0 3px 0 0;
+}
+.gumball105 * {
+	float:left
+}
+.gumball105 p.topic, .gumball105 p.description, .gumball105 h4 {
+	width:150px
+}
+
+/* chowhound */
+/* browse boards/saved boards */
+.boards_grouped_index h3 {width:190px}
+
+ul#ch_tab_options li a#tab_saved_boards {position:relative;}
+ul#ch_tab_options a#tab_saved_boards {text-align:right; padding-right:30px;padding-top:0 !important;margin-top:-5px;margin-bottom:10px}
+
+#num_of_saved_boards, ul#ch_tab_options li.selected a #num_of_saved_boards {position:absolute;z-index:1;right:0px}
+#num_of_saved_boards{top:11px;}
+
+ul#ch_tab_options li.selected a #num_of_saved_boards {top:14px;}
+ul#ch_tab_options li.saved_boards {width:215px;}
+ul#ch_tab_options li.saved_boards a {margin-left:-5px}
+ul#ch_tab_options li.saved_boards.selected a {margin-left:-10px}
+
+.saved_boards_banner {margin-top:-3px}
+.save_board_button  {padding-bottom:5px}
+
+th.post_count {width:105px}
+
+.boards #board_banner .topic_header_tagline {width:470px;margin-top:-35px;margin-right:10px}
+#board_banner .topic_header {display:block}
+
+table.posts th {text-align:left}
+table th small {width:225px}
+table .num_topics_meta {margin:6px 10px 0 0;}
+
+/* board popups */
+#chowhound_popup_intl a {text-indent:0}
+.boards .chowhound_popup dd a, .topics .chowhound_popup dd a {text-indent:0;padding-right:10px;}
+.boards #chowhound_popup_us.chow_popup dl {width:160px;margin-bottom:10px}
+.boards #chowhound_popup_us.chow_popup dd a, .topics #chowhound_popup_us.chow_popup dd a {width:155px;padding-right:10px}
+#chowhound_popup_canada dd a, #chowhound_popup_topical dd a {padding-left:0;width:165px;}
+.chow_popup .popup_inner {padding-top:15px}
+
+/* chowhound sidebar places mentioned */
+#places_mentioned ul li span {float:left;width:250px;}

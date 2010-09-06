@@ -1,0 +1,17 @@
+/* share tools and action items */
+
+.action_items_btn .button_graphic {background: url(/images/action_items_sprite.jpg) top left no-repeat; position:absolute; width:4px; height:4px; overflow:hidden}
+.action_items_btn .action_btn_tl {top:-2px; left:-1px; background-position: 0px 0px}
+.action_items_btn .action_btn_tr {top:-1px; right:-1px; background-position: -4px -50px}
+.action_items_btn .action_btn_bl {bottom:-3px; left:-1px; background-position: -1px -105px}
+.action_items_btn .action_btn_br {bottom:-1px; right:-3px; background-position: -5px -153px}
+
+.action_items_btn:hover {background-color:#9b9b9a; color:#fff !important}
+.action_items_btn:hover a {color:#fff !important}
+.action_items_btn a:hover {color:#fff;text-decoration:none}
+.action_items_btn:hover .action_btn_tl {top:-1px; left:-1px; background-position: 0px -201px}
+.action_items_btn:hover .action_btn_tr {top:-1px; right:-1px; background-position: 0px -250px}
+.action_items_btn:hover .action_btn_bl {bottom:-1px; left:-1px; background-position: 0px -300px}
+.action_items_btn:hover .action_btn_br {bottom:-1px; right:-1px; background-position: 0px -352px}
+
+.action_items_btn .save_image {padding:5px;cursor:pointer}

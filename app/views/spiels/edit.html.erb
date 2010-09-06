@@ -1,0 +1,16 @@
+<h1>Editing spiel</h1>
+
+<% form_for(@spiel) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :version %><br />
+    <%= f.text_field :version %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @spiel %> |
+<%= link_to 'Back', spiels_path %>

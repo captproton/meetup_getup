@@ -1,0 +1,221 @@
+/* rok ad */
+#banner_rok_ad {
+  margin:1em 0 1em 0;
+}
+
+/* places */
+ul.places {font-size:1em}
+
+a.blue {color: #069 !important}
+a.blue:hover {color: #999 !important}
+
+
+/* places list */
+#add_place_popup #popup_col_a form .button {margin-bottom: -3px}
+
+/* blogs */
+.blog .sidebar { padding-left: 0px; }
+#blog_categories_sidebar .blog_category_list a { width: 154px; }
+
+/* share tools */
+#recipes #time,
+#recipes #time.with_image {z-index: -1;}
+#menu_share ul li a {display: inline-block} /* fixes hasLayout */
+
+
+td.post_count {
+	text-align:center;
+}
+
+.topics_show .post,
+.topics_new .post,
+.topics_show #comments .post,
+#ft_nav,
+.tagcloud,
+.tabby_content {
+  zoom:1
+}
+
+
+#blog_archive_list li {width:7.7em;}
+
+
+
+/* story hub */
+.stories_index .gumball h4 {
+	font-size:12px;
+}
+/* recipe show page */
+
+#recipes #col1b {
+  width:47em;
+  float: left;
+  margin: .5em 0 0 0;
+  padding: 0;
+}
+
+#recipes #col1b .content {
+  border-left: 1px solid #ececec;
+  padding: 0 0 0 1.5em;
+}
+
+#recipes #col1b #action_items_footer {
+  background-color:#ebebeb;
+  padding:1.5em .25em 1.5em 1em;
+  font-size:1em;
+  font-weight:bold;
+  width:46em;
+  float:right;
+}
+/* simple layout */
+#simple #custom-doc {width:620px;}
+
+/* account login pages */
+#newsletter_generic_elements {
+  margin: 1em 0 0 5em;
+}
+li.newsletter_item {
+	font-size:1.2em;
+  margin: 0 0 1em 1em;
+  padding: 0;
+}
+#newsletter_digest_elements {
+  margin: 0 0 1em 7.5em;
+}
+#newsletter_digest_title {
+  margin: -1em 0 1em 7.5em;
+}
+
+
+.post_form .entry {
+  width: 85%;
+}
+
+
+/* search results */
+#search_results .list_item {padding-bottom:0}
+#search_results .list_item .content {margin-left: 33px; width: 48em;}
+#search_results .list_item .content.with_promo {margin-left: 0px;}
+
+#search_advanced_link a {zoom:1}
+
+
+#restaurant_options .advanced_col li label, 
+.more_options .advanced_col li label{left:23px; top:4px !important; padding-bottom:4px !important; margin:0 23px 0 0}
+#restaurant_options .advanced_col li, 
+.more_options .advanced_col li {margin-bottom:3px !important;}
+
+
+
+#story_body .content_intro table {width:100%}
+.stories_show .supertaster .content_body .item {padding:0 1.1em;}
+
+#main_body #results_wrapper {
+	min-height:auto !important;
+	height:100% !important;
+}
+
+/*lists */
+.list_item .inner {height:34px}
+
+
+/* slideshow gallery */
+#chow_slideshow #custom-doc {padding:0 1em 1.5em 1.5em; width:95.5em}
+#more_shows_box #btm_shadow {background:none}
+
+/* ratings */
+.chow_rating .stars,
+.chow_rating .viewport,
+.chow_rating_module,
+.rating_module li a:hover {
+	background-image: url(/images/rating_stars.gif); /* stars sprite */
+}
+
+/* restaurants */
+#places_detail .arrows,
+#all_reviews .arrows, 
+#regions_index .arrows {margin-left:0 !important}
+#regions_index #sponsor_small {margin-top:0px}
+
+.comment_box {zoom:1}
+.comment_box_br,
+.comment_box_bl {bottom: -2px !important}
+
+.comment_box_tail {bottom: -17px !important}
+
+#areas_list li,
+.cities_list {width:185px !important}
+
+.chow_popup.more_options h3 {margin-top:2px}
+.popup_inner h2 {padding-top:10px}
+
+/* manage links */
+
+#manage_links_instructions {margin-top:20px} 
+a.refresh-btn {margin-top:0px;}
+.manage-links-box ul#restaurant-list li.first {width:100%}
+.places_search.dropdown_box {top:-5px;}
+.post_form .photo_upload .instructions {margin-top:0;padding-top:0}
+.post_form .places_search p.instructions {margin-top:-25px}
+.add-photo-photo .fileupload-fake-text {width:395px;margin-right:3px}		
+.response .add-photo-photo .fileupload-fake-text {width:380px;}			
+ol ol .response .add-photo-photo .fileupload-fake-text {width:360px;}		
+ol ol ol .response .add-photo-photo .fileupload-fake-text {width:340px;}		
+ol ol ol ol .response .add-photo-photo .fileupload-fake-text {width:320px;}		
+ol ol ol ol ol .response .add-photo-photo .fileupload-fake-text {width:300px;}		
+ol ol ol ol ol ol .response .add-photo-photo .fileupload-fake-text {width:280px;}		
+ol ol ol ol ol ol ol .response .add-photo-photo .fileupload-fake-text {width:260px;}	
+
+/*columns The Ten*/
+#story_body.the_ten .content_body p.ten {padding:15px 0 0 110px; width:300px;}
+#story_body.the_ten .content_body p.ten span.number {margin:-25px 23px 0 -57px;}
+#story_body.the_ten .content_body p {float:right; width:300px; padding:15px 0 0 85px; }
+#story_body.the_ten .content_body p span.number {margin:-15px 23px 0 -35px;}
+
+/* video hub */
+.selected.video-side-nav-link a,
+.selected.video-side-nav-link a:hover,
+.video-side-nav-link {position:relative}
+#video-hub #video-holder {margin-left:70px}
+#video-hub #video-nav {margin-top: -1px}
+
+
+#video-hub .video-side-nav-link a {display:block !important; width: 105px; margin-top:-10px; margin-right:0}
+#video-hub .video-side-nav-link.first a {margin-top:0}
+#video-hub .video-side-nav-link a.rss {padding-top:0px;position:absolute; left:0; top:23px}
+#video-hub .video-side-nav-link.first a.rss {top:8px}
+#video-side-nav li.video-side-nav-link.selected {background-color:#ebebeb !important}
+#video-hub .show.video-side-nav-link a {position:relative; top:0px}
+#video-hub .video-side-nav-link.collection a {margin-top:0; width: 130px}
+ul.show .video-side-nav-link.collection {display:none}
+
+#searchmap-options label input{top:0;}
+
+
+/* lightbox */
+.chow_lightbox_bg {
+  position: absolute;
+  height: 3000px;
+  width: expression(document.documentElement.clientWidth + 'px')
+}
+.signup_hints {width:78px}
+
+/* home page */
+#chow_carousel_inner {
+	position:relative
+}
+/* gumballs */
+#home ul#gumballs li p {
+ line-height:16px
+}
+/* search */
+#chow_header #header_search {width:408px !important}
+#chow_header.chowhound #header_search {width:413px !important}
+#home #header_search_options {float:left}
+
+/* footer */
+.footer_column li {padding-right:5px}
+#ft_body {
+	overflow:hidden;
+	position:relative
+}
